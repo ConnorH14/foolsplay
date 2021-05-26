@@ -1,5 +1,5 @@
 :root{
-  --theme-bg: #08415c;
+  --theme-bg: #05293a;
   --theme-primary: #fffcf9;
   --theme-secondary: #d5cfe1;
   --theme-success: #06d6a0;
@@ -8,6 +8,11 @@
 
 body{
   max-width: 2000px;
+  background-image: url("https://www.transparenttextures.com/patterns/shattered-dark.png");
+}
+
+.footer{
+  background-color: var(--theme-bg);
 }
 
 .project-hero{
@@ -50,6 +55,26 @@ body{
   border-left: 10px solid var(--theme-success);
 }
 
+.mic-hero{
+  background-color: var(--theme-bg);
+  background-image: url('assets/mic-hero.png');
+  background-size: 100%;
+  height: 300px;
+  padding: 0;
+  transition: 1s;
+  border-right: 2px solid black;
+}
+.mic-hero:hover{
+  background-image: url('assets/mic-hero-h.png');
+  background-size: 110%;
+  transition: 1s;
+}
+.mic-hero h2{
+  opacity: 1;
+  padding-left: 10px;
+  border-left: 10px solid var(--theme-success);
+}
+
 .hero-div{
   box-shadow: 5px 2px 20px 0px #000000;
 }
@@ -62,6 +87,12 @@ body{
 
 .theme-bg{
   background-color: var(--theme-bg);
+}
+.theme-primary{
+  background-color: var(--theme-primary);
+}
+.theme-secondary{
+  background-color: var(--theme-secondary);
 }
 .theme-success{
   background-color: var(--theme-success);
@@ -90,7 +121,7 @@ body{
   font-family: 'Varela Round', sans-serif;
   border-radius: 10px;
   padding: 0.5rem;
-  background-color: var(--theme-bg);
+  background: none;
   color: var(--theme-primary);
   border: none;
 }
